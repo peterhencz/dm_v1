@@ -13,11 +13,4 @@ export class PadComponent implements OnInit {
   ngOnInit() {
   }
 
-  const sampler = new Tone.Sampler({
-    "C3" : "/assets/drum_sounds/dm_kick.mp3",
-    "D3" : "/assets/drum_sounds/dm_snare_clap.mp3",
-    "F3" : "/assets/drum_sounds/dm_closed_hh.mp3",
-   }, function(){
-    sampler.triggerAttack("D3")
 }
-
