@@ -12,7 +12,7 @@
 .pad:hover {
   opacity: 0.6;
   transform: perspective(3000px) translate3d(0px, 0px, -40px) rotateX(6deg);
-  box-shadow: 0 10px 15px -15px #545454;  
+  box-shadow: 0 10px 20px -15px #545454;  
 }
 
 .pad:active {
