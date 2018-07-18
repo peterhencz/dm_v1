@@ -16,8 +16,7 @@ import { PadComponent } from './pad/pad.component';
     BoardComponent,
     MachineComponent,
     DrumpadsComponent,
-    PadComponent,
-    Tone
+    PadComponent
   ],
   imports: [
     BrowserModule,
