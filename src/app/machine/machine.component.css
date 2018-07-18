@@ -7,7 +7,7 @@
   background: -webkit-linear-gradient(left, rgb(231, 238, 245), rgb(180, 197, 215));
   background: -o-linear-gradient(left, rgb(231, 238, 245), rgb(180, 197, 215));
   background: linear-gradient(to right, rgb(231, 238, 245), rgb(180, 197, 215));
-  background-size: 400%;
+  background-size: 200%;
   padding: 2em;
   border-radius: 0.2em 0.2em 0.2em 0.2em;
 }
