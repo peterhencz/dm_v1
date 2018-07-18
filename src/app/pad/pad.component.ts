@@ -8,22 +8,18 @@ import * as Tone from 'tone';
 })
 export class PadComponent implements OnInit {
 
-  constructor() { 
-    const zongi = new Tone.Sampler({
-    "C3" : "./src/static/piano_c3.mp3",
-    "D#3" : "./src/static/Piano_d3.wav",
-    "F#3" : "./src/static/Piano_f3.wav",
-    "A3" : "./src/static/Piano_a3.wav"
-  }, function() {
-    let time = '2n';
-    zongi.triggerAttack("E4", time)
-    zongi.triggerAttack("C0", time);
-    zongi.triggerAttack("B#2")
-    zongi.triggerAttack(time + 0.6);
+  kick = new Tone.Player({
+    "url" : "./assets/drum_sounds/dm_kick.mp3",
   }).toMaster();
-}
+
+  constructor() { }
 
   ngOnInit() {
   }
 
+  pushKick() {
+    this.kick.start();
+  }
+
+  
 }

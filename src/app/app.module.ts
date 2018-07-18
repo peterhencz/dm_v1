@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import * as Tone from 'tone';
+// import * as Tone from 'tone';
 
 
 import { AppComponent } from './app.component';
@@ -19,8 +19,7 @@ import { PadComponent } from './pad/pad.component';
     PadComponent
   ],
   imports: [
-    BrowserModule,
-    Tone
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]

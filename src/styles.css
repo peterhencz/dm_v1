@@ -5,9 +5,8 @@ body {
   margin: 0;
   place-items: center center;
   font-family: 'Open Sans', sans-serif;
-
-background: -webkit-linear-gradient(180deg, rgb(196, 211, 224), rgb(131, 164, 196));
-background: linear-gradient(180deg, rgb(196, 211, 224), rgb(131, 164, 196));
-
-  background-size: 100% 800%;
+  background: -webkit-linear-gradient(rgb(196, 211, 224), rgb(131, 164, 196));
+  background: -o-linear-gradient(rgb(196, 211, 224), rgb(131, 164, 196));
+  background: linear-gradient(rgb(196, 211, 224), rgb(131, 164, 196));
+  background-size: 400% 800%;
 }

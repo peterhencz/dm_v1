@@ -1,6 +1,6 @@
 #machine {
-  width: 80em;
-  height: 40em;
+  width: 80vw;
+  height: 50vh;
   display: grid;
   place-items: center center;
   color: black;
@@ -9,6 +9,5 @@
   background: linear-gradient(to right, rgb(231, 238, 245), rgb(180, 197, 215));
   background-size: 400%;
   padding: 2em;
-  border-radius: 0.1em 0.2em 0.1em 0.1em;
-  box-shadow: 0 5px 1000px -70px #545454;
+  border-radius: 0.2em 0.2em 0.2em 0.2em;
 }
