@@ -1,0 +1,15 @@
+#drumpads {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  justify-content: stretch;
+  align-items: stretch;
+  grid-row-gap: 1em;
+  grid-column-gap: 1em;
+  width: 30em;
+  height: 30em;
+  padding: 1em;
+  border-radius: 0.3em;
+/*  background-color: white;
+  opacity: 1;*/
+}

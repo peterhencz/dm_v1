@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  color: white;
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  place-items: center center;
+  font-family: 'Open Sans', sans-serif;
+
+background: -webkit-linear-gradient(180deg, rgb(196, 211, 224), rgb(131, 164, 196));
+background: linear-gradient(180deg, rgb(196, 211, 224), rgb(131, 164, 196));
+
+  background-size: 100% 800%;
+}
