@@ -10,7 +10,7 @@ export class PadComponent implements OnInit {
 
   kick = new Tone.Player({
     "url" : "./assets/drum_sounds/dm_kick.mp3",
-  }).toMaster();
+  }).triggerAttack();
 
   constructor() { }
 
