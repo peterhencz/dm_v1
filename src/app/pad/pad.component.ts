@@ -18,7 +18,7 @@ export class PadComponent implements OnInit {
   }
 
   pushKick() {
-    this.kick.start();
+    this.kick.triggerAttack();
   }
 
   
