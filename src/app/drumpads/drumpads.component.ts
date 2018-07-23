@@ -10,6 +10,10 @@ import { SoundService } from '../sound.service';
 })
 export class DrumpadsComponent implements OnInit {
 
+  selectedSound = new Tone.Player({
+    "url" : "./assets/drum_sounds/dm_kick.mp3",
+  }).toMaster();
+
   constructor(
     public soundService: SoundService
   ) { }
