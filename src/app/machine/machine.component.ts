@@ -12,6 +12,8 @@ import { SoundService } from '../sound.service';
 
 export class MachineComponent implements OnInit {
 
+  selectedSound;
+  
   kick = new Tone.Player({
     "url" : "./assets/drum_sounds/dm_kick.mp3",
   }).toMaster();
