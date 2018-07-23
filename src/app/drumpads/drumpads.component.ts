@@ -19,5 +19,8 @@ export class DrumpadsComponent implements OnInit {
   ngOnInit() {
   }
 
+  startSeq() {
+    this.seq.start();
+  }
 
 }
