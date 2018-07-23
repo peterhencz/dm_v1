@@ -24,7 +24,7 @@ export class MachineComponent implements OnInit {
     "url" : "./assets/drum_sounds/dm_snare_clap.mp3",
   }).toMaster();
 
-  constructor(public selectedSound: SoundService) { }
+  constructor(public soundService: SoundService) { }
 
   ngOnInit() {
   }
