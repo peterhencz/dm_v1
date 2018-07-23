@@ -17,7 +17,7 @@ export class PadComponent implements OnInit {
   ngOnInit() {
   }
 
-  playSound(sound) {
+  pushSound(sound) {
     console.log(this.sound);
     this.sound.start();
   }
