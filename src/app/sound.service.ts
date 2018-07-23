@@ -19,7 +19,7 @@ export class SoundService {
   }).toMaster();
 
 
-  constructor(public sound) {
+  constructor()) {
   }
 
   selectSound(sound) {
