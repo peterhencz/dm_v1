@@ -10,6 +10,10 @@ import { PadComponent } from '../pad/pad.component';
 })
 export class DrumpadsComponent implements OnInit {
 
+  seq = new Tone.Sequence(function(time, note){
+  console.log(note);
+}, ["C4", "E4", "G4", "A4"], "4n");
+
   constructor() { }
 
   ngOnInit() {
