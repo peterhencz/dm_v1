@@ -1,7 +1,9 @@
 <div id="machine">
-  <button (click)="selectSound(kick)">kick</button> 
-  <button (click)="selectSound(hh)">hi-hat</button> 
-  <button (click)="selectSound(snare)">snare</button> 
-  <button (click)="startSeq()">xxx</button> 
+  <div id="control">
+    <button (click)="selectSound(kick)">kick</button> 
+    <button (click)="selectSound(hh)">hi-hat</button> 
+    <button (click)="selectSound(snare)">snare</button> 
+    <button (click)="startSeq()">xxx</button> 
+  </div>
   <app-drumpads></app-drumpads>
 </div>
