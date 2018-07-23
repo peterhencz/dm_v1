@@ -20,7 +20,7 @@ export class DrumpadsComponent implements OnInit {
   }
 
   playSeq() {
-    console.log('cica');
+    this.seq.start();
   }
 
 }
