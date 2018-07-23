@@ -29,7 +29,7 @@ export class MachineComponent implements OnInit {
   ngOnInit() {
   }
 
-  pushSound(sound) {
+  selectSound(sound) {
     this.selectedSound.selectSound(sound)
   }
 }
