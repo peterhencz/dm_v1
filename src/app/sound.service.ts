@@ -19,13 +19,13 @@ export class SoundService {
   }).toMaster();
 
 
-  constructor() {
+  constructor(public sound: Tone) {
   }
 
   selectSound(sound) {
     console.log(sound);
     this.selectedSound = sound;
-    
+
   }
 
 }
