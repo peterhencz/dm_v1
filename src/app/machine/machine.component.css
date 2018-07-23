@@ -22,7 +22,6 @@
 #instruments {
   display: flex;
   flex-direction: row;
-  margin: 1em;
 }
 
 .select-instruments {
