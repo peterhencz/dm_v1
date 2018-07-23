@@ -21,7 +21,10 @@ import { PadComponent } from './pad/pad.component';
   imports: [
     BrowserModule
   ],
-  providers: [SoundService,DrumpadsComponent],
+  providers: [
+    SoundService,
+    DrumpadsComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
