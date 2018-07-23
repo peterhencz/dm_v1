@@ -24,6 +24,10 @@
   flex-direction: row;
 }
 
+button {
+  outline: none;  
+}
+
 .select-instruments {
   color: black;
   margin: 1em;
