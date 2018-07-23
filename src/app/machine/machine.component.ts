@@ -12,8 +12,7 @@ import { SoundService } from '../sound.service';
 
 export class MachineComponent implements OnInit {
 
-  seq;
-  
+
   kick = new Tone.Player({
     "url" : "./assets/drum_sounds/dm_kick.mp3",
   }).toMaster();
@@ -26,7 +25,10 @@ export class MachineComponent implements OnInit {
     "url" : "./assets/drum_sounds/dm_snare_clap.mp3",
   }).toMaster();
 
-  constructor(public soundService: SoundService) { }
+  constructor(
+    public soundService: SoundService,
+    public seq: DrumpadsComponent
+    ) { }
 
   ngOnInit() {
   }
