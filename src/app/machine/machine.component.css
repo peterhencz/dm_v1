@@ -20,8 +20,9 @@
 }
 
 .select-instruments {
+  color: black;
   opacity: 0.5;
-  width: 100%;
+  width: 3em;
   height: 100%;
   background-color: white;
   border-radius: 0.2em;
