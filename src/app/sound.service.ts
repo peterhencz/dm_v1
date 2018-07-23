@@ -4,7 +4,9 @@ import * as Tone from 'tone';
 @Injectable()
 export class SoundService {
 
-  selectedSound;
+  selectedSound = new Tone.Player({
+    "url" : "./assets/drum_sounds/dm_kick.mp3",
+  }).toMaster();;
 
   constructor() {
   }
