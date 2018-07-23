@@ -10,8 +10,6 @@ import { PadComponent } from '../pad/pad.component';
 })
 export class DrumpadsComponent implements OnInit {
 
-
-
   constructor() { }
 
   ngOnInit() {
