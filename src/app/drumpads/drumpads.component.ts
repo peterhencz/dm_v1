@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as Tone from 'tone';
 import { PadComponent } from '../pad/pad.component';
-
+import { SoundService } from '../sound.service';
 
 @Component({
   selector: 'app-drumpads',
@@ -10,7 +10,9 @@ import { PadComponent } from '../pad/pad.component';
 })
 export class DrumpadsComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public soundService: SoundService
+  ) { }
 
   ngOnInit() {
   }
