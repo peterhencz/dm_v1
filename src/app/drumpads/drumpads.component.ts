@@ -20,7 +20,7 @@ export class DrumpadsComponent implements OnInit {
   }
 
   startSeq() {
-    this.seq.start(3);
+    this.seq.start();
   }
 
 }
