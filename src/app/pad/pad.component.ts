@@ -16,7 +16,7 @@ export class PadComponent implements OnInit {
   }
 
   playSound() {
-    this.soundService.selectedSound.start();
+    this.selectedSound.start();
     console.log(this.soundService.selectedSound);
   }
 
