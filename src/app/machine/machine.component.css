@@ -1,3 +1,12 @@
+#machine {
+  width: 70vw;
+  height: 50vh;
+}
+
+#machine:hover {
+  transform: scale(1.01) perspective(3000px) translate3d(0px, -2px, 0px);
+}
+
 #drumpad {
   display: grid;
   place-items: center right;
@@ -11,13 +20,4 @@
   border-radius: 0.2em 0.2em 0.2em 0.2em;
   box-shadow: 0 5px 400px -60px #545454;
   transition: 0.25s ease-in-out;
-}
-
-#machine {
-  width: 70vw;
-  height: 50vh;
-}
-
-#machine:hover {
-  transform: scale(1.01) perspective(3000px) translate3d(0px, -2px, 0px);
 }
