@@ -19,7 +19,7 @@ export class SoundService {
   }).toMaster();
 
 
-  constructor(public sound: Tone.Player) {
+  constructor(public sound) {
   }
 
   selectSound(sound) {
