@@ -26,6 +26,7 @@
 
 .select-instruments {
   color: black;
+  margin: 1em;
   opacity: 1;
   width: 3em;
   height: 100%;
