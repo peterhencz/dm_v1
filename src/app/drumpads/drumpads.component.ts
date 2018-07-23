@@ -19,8 +19,8 @@ export class DrumpadsComponent implements OnInit {
     var loop = new Tone.Sequence(function(time, note){
       
       console.log(time);
-      
-    }, "16n").start(0);
+
+    }, "8n").start(0);
 
     Tone.Transport.start();
 
