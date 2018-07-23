@@ -9,7 +9,7 @@ import { SoundService } from '../sound.service';
 })
 export class PadComponent implements OnInit {
 
-  sound = new Tone.Player();
+  sound = new Tone.Buffer();
 
   constructor(
     public selectedSound: SoundService) { }
