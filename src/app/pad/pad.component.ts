@@ -9,16 +9,17 @@ import { SoundService } from '../sound.service';
 })
 export class PadComponent implements OnInit {
 
-  sound;
+  sound = new Tone.Player();
 
-  constructor(public selectedSound: SoundService) { }
+  constructor(
+    public selectedSound: SoundService) { }
 
   ngOnInit() {
   }
 
-  pushSound(sound) {
-    console.log(sound);
-    // this.sound.start();
+  playSound(sound) {
+    console.log(this.sound);
+    this.sound.start();
   }
 
 }
