@@ -12,6 +12,8 @@ import { SoundService } from '../sound.service';
 
 export class MachineComponent implements OnInit {
 
+  seq;
+  
   kick = new Tone.Player({
     "url" : "./assets/drum_sounds/dm_kick.mp3",
   }).toMaster();
@@ -34,7 +36,7 @@ export class MachineComponent implements OnInit {
   }
 
   startSeq() {
-    console.log('cica');
+    this.seq.playSeq();
   }
-  
+
 }
