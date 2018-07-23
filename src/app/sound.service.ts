@@ -9,7 +9,7 @@ export class SoundService {
   constructor() {
   }
 
-  selectSound(sound) {
+  pushSound(sound) {
     console.log(sound);
     this.selectedSound = sound;
 
