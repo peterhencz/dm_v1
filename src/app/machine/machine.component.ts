@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import * as Tone from 'tone';
 import { PadComponent } from '../pad/pad.component';
+import { DrumpadsComponent } from '../drumpads/drumpads.component';
+import { SoundService } from '../sound.service';
 
 @Component({
   selector: 'app-machine',
@@ -10,17 +12,12 @@ import { PadComponent } from '../pad/pad.component';
 
 export class MachineComponent implements OnInit {
 
-  seq = new Tone.Sequence(function(time, note){
-    console.log(note);
-  }, [kick);
-
-  constructor() { }
+  constructor(public selectedSound: SoundService) { }
 
   ngOnInit() {
   }
 
-  startSeq() {
-    this.seq.start();
+  pushSound(sound) {
+    this.selectedSound.selectSound(sound);
   }
-
 }

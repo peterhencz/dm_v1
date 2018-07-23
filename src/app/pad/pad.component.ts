@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as Tone from 'tone';
+import { SoundService } from '../sound.service';
 
 @Component({
   selector: 'app-pad',
@@ -8,18 +9,17 @@ import * as Tone from 'tone';
 })
 export class PadComponent implements OnInit {
 
-  kick = new Tone.Player({
-    "url" : "./assets/drum_sounds/dm_kick.mp3",
-  }).toMaster();
+  selectedSound = new Tone.Player();
 
-  constructor() { }
+  constructor(
+    public sound: SoundService) { }
 
   ngOnInit() {
   }
 
-  pushKick() {
-    this.kick.start();
+  pushSound(sound) {
+    console.log(this.sound);
+    this.selectedSound.start();
   }
 
-  
 }

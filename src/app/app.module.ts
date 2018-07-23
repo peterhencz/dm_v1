@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 // import * as Tone from 'tone';
-
+import { SoundService } from './sound.service';
 
 import { AppComponent } from './app.component';
 import { BoardComponent } from './board/board.component';
@@ -21,7 +21,7 @@ import { PadComponent } from './pad/pad.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [SoundService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
