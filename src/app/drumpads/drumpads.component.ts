@@ -19,7 +19,7 @@ export class DrumpadsComponent implements OnInit {
   ngOnInit() {
   }
 
-  startSeq() {
+  playSeq() {
     console.log('cica');
   }
 
