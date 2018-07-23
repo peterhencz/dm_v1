@@ -40,6 +40,6 @@ button {
   border: none;
 }
 
-.select-instruments:focus {
+.select-instruments:enabled {
     background-color: #f4baba;
 }
