@@ -20,7 +20,7 @@ export class DrumpadsComponent implements OnInit {
       
       console.log(note);
 
-    }, 'x').start(0);
+    }, 'x').start(3);
 
     Tone.Transport.start();
 
