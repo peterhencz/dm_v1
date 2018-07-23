@@ -32,4 +32,6 @@ export class MachineComponent implements OnInit {
   selectSound(sound) {
     this.soundService.pushSound(sound)
   }
+
+  
 }
