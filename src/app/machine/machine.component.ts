@@ -33,5 +33,8 @@ export class MachineComponent implements OnInit {
     this.soundService.pushSound(sound)
   }
 
+  startSeq() {
+    console.log('cica');
+  }
   
 }
