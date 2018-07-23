@@ -19,6 +19,11 @@
   color: black;
 }
 
+#instruments {
+  display: flex;
+  flex-direction: column;  
+}
+
 .select-instruments {
   color: black;
   opacity: 1;
