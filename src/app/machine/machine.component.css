@@ -17,7 +17,4 @@
   display: grid;
   place-items: center right;
   color: black;
-/*  background: -webkit-linear-gradient(142deg, rgb(231, 238, 245), rgb(180, 197, 215));
-  background: -o-linear-gradient(142deg, rgb(231, 238, 245), rgb(180, 197, 215));
-  background: linear-gradient(142deg, rgb(231, 238, 245), rgb(180, 197, 215));*/
 }
