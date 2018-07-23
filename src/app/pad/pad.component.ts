@@ -9,6 +9,8 @@ import { SoundService } from '../sound.service';
 })
 export class PadComponent implements OnInit {
 
+  status = false;
+
   constructor(
     public soundService: SoundService) { }
 
@@ -18,6 +20,15 @@ export class PadComponent implements OnInit {
   playSound() {
     this.soundService.selectedSound.start();
     console.log(this.soundService.selectedSound);
+  }
+
+  toggle() {
+    if (this.status == false) {
+      this.status = true
+    }
+    else {
+      this.status = false
+    }
   }
 
 }
