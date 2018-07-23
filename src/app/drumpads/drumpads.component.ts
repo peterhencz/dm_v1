@@ -19,7 +19,7 @@ export class DrumpadsComponent implements OnInit {
   var seq = new Tone.Sequence(function(time, note){
   console.log(note);
 //straight quater notes
-}, ["C4", "E4", "G4", "A4"], "4n").start(0);
+}, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "4n").start(0);
 
     Tone.Transport.start();
 
