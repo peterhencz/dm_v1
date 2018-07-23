@@ -16,10 +16,11 @@ export class DrumpadsComponent implements OnInit {
   }
 
   playSeq() {
-    const seq = new Tone.Sequence(function(time, note){
-      console.log(note);
-    }, ["C4", "E4", "G4", "A4"], "4n");
-    Tone.Transport.start()
+var loop = new Tone.Loop(function(time){
+  //triggered every eighth note. 
+  console.log(time);
+}, "8n").start(0);
+Tone.Transport.start();
     console.log('cica');
   }
 
