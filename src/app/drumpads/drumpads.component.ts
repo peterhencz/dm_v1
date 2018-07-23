@@ -15,7 +15,7 @@ export class DrumpadsComponent implements OnInit {
   }).toMaster();
 
   seq = new Tone.Sequence(function(time, sound){
-    console.log(sound);
+    this.kick.start();
   }, [this.kick], "8n");
   
   constructor() { }
