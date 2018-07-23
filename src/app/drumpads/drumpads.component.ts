@@ -16,11 +16,10 @@ export class DrumpadsComponent implements OnInit {
   }
 
   playSeq() {
-    var loop = new Tone.Sequence(function(time, note){
-      
-      console.log(note);
-
-    }, x).start(0);
+  var seq = new Tone.Sequence(function(time, note){
+  console.log(note);
+//straight quater notes
+}, ["C4", "E4", "G4", "A4"], "4n").start(0);
 
     Tone.Transport.start();
 
