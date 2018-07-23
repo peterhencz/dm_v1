@@ -20,7 +20,9 @@ export class DrumpadsComponent implements OnInit {
   }
 
   playSeq() {
-    this.seq.start();
+  seq = new Tone.Sequence(function(time, note){
+  console.log(note);
+}, ["C4", "E4", "G4", "A4"], "4n");
   }
 
 }
