@@ -1,6 +1,12 @@
 #machine {
   width: 70vw;
   height: 50vh;
+    background-color: #F3F5F6;
+  background-size: 800%;
+  padding: 2em;
+  border-radius: 0.2em 0.2em 0.2em 0.2em;
+  box-shadow: 0 5px 400px -60px #545454;
+  transition: 0.25s ease-in-out;
 }
 
 #machine:hover {
@@ -14,10 +20,4 @@
 /*  background: -webkit-linear-gradient(142deg, rgb(231, 238, 245), rgb(180, 197, 215));
   background: -o-linear-gradient(142deg, rgb(231, 238, 245), rgb(180, 197, 215));
   background: linear-gradient(142deg, rgb(231, 238, 245), rgb(180, 197, 215));*/
-  background-color: #F3F5F6;
-  background-size: 800%;
-  padding: 2em;
-  border-radius: 0.2em 0.2em 0.2em 0.2em;
-  box-shadow: 0 5px 400px -60px #545454;
-  transition: 0.25s ease-in-out;
 }
