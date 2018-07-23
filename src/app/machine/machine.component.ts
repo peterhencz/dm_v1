@@ -30,6 +30,6 @@ export class MachineComponent implements OnInit {
   }
 
   selectSound(sound) {
-    this.selectedSound.selectSound(sound)
+    this.selectedSound.pushSound(sound)
   }
 }
