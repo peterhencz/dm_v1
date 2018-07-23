@@ -13,7 +13,7 @@ import { SoundService } from '../sound.service';
 export class MachineComponent implements OnInit {
 
   selectedSound;
-  
+
   kick = new Tone.Player({
     "url" : "./assets/drum_sounds/dm_kick.mp3",
   }).toMaster();
@@ -32,7 +32,6 @@ export class MachineComponent implements OnInit {
   }
 
   pushSound(sound) {
-    // this.selectedSound.selectSound(sound);
-    sound.start();
+    this.selectedSound = sound;
   }
 }
