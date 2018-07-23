@@ -9,7 +9,9 @@ import { SoundService } from '../sound.service';
 })
 export class PadComponent implements OnInit {
 
-  sound = new Tone.Player();
+  kick = new Tone.Player({
+    "url" : "./assets/drum_sounds/dm_kick.mp3",
+  }).toMaster();
 
   constructor(
     public selectedSound: SoundService) { }
@@ -19,7 +21,7 @@ export class PadComponent implements OnInit {
 
   playSound(sound) {
     console.log(this.sound);
-    this.sound.start();
+    this.kick.start();
   }
 
 }
