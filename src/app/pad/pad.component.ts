@@ -19,7 +19,7 @@ export class PadComponent implements OnInit {
 
   pushSound(sound) {
     console.log(this.sound);
-    this.sound.start();
+    this.sound.load();
   }
 
 }
