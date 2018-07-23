@@ -6,7 +6,7 @@ export class SoundService {
 
   selectedSound = new Tone.Player({
     "url" : "./assets/drum_sounds/dm_kick.mp3",
-  }).toMaster();;
+  }).toMaster();
 
   constructor() {
   }
