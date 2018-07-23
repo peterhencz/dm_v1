@@ -23,11 +23,11 @@ export class PadComponent implements OnInit {
   }
 
   toggle() {
-    if (this.status == false) {
-      this.status = true
+    if (this.status) {
+      this.status = false
     }
     else {
-      this.status = false
+      this.status = true
     }
   }
 
