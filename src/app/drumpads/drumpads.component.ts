@@ -19,7 +19,7 @@ export class DrumpadsComponent implements OnInit {
     var loop = new Tone.Loop(function(time){
       //triggered every eighth note. 
       console.log(time);
-    }, "1n").start(0);
+    }, "16n").start(0);
     Tone.Transport.start();
     console.log('cica');
   }
