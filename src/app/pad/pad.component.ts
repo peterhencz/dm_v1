@@ -29,7 +29,7 @@ export class PadComponent implements OnInit {
     else {
       this.status = true
     }
-    console.log(status);
+    console.log(this.status);
   }
 
 }
