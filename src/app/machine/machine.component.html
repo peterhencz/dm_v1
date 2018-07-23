@@ -1,9 +1,12 @@
-<div id="control">
+
+<div id="machine">
+  <div id="control">
     <button (click)="selectSound(kick)">kick</button> 
     <button (click)="selectSound(hh)">hi-hat</button> 
     <button (click)="selectSound(snare)">snare</button> 
     <button (click)="startSeq()">xxx</button> 
-</div>
-<div id="machine">
-  <app-drumpads></app-drumpads>
+  </div>
+  <div id="drumpad">
+    <app-drumpads></app-drumpads>
+  </div>
 </div>
