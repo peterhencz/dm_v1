@@ -24,7 +24,8 @@ export class DrumpadsComponent implements OnInit {
   }
 
   playSeq() {
-        console.log('cicafasza');
+    this.seq.start(0);
+      console.log('cicafasza');
     Tone.Transport.start();
   }
 
