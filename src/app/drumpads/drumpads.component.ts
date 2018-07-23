@@ -18,7 +18,7 @@ export class DrumpadsComponent implements OnInit {
   playSeq() {
     var loop = new Tone.Sequence(function(time, note){
       
-      console.log(time);
+      console.log(note);
 
     }, "1n").start(0);
 
