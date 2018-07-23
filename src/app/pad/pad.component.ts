@@ -12,8 +12,7 @@ export class PadComponent implements OnInit {
   selectedSound;
 
   constructor(
-    public sound: SoundService,
-    ) { }
+    public sound: SoundService) { }
 
   ngOnInit() {
   }
