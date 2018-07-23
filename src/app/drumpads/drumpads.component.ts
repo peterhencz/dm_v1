@@ -21,7 +21,6 @@ export class DrumpadsComponent implements OnInit {
     }, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "16n").start(0);
 
     Tone.Transport.start();
-    Tone.Transport.stop();
     console.log('cica');
   }
 
