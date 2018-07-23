@@ -37,7 +37,7 @@ export class MachineComponent implements OnInit {
     this.soundService.pushSound(sound)
   }
 
-  startSeq() {
+  startSeq(sequence) {
     this.seq.playSeq();
   }
 
