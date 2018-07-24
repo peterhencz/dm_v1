@@ -13,11 +13,10 @@ import { PadService } from '../pad.service';
 export class PadComponent implements OnInit {
   
   pad;
-  
+
   constructor(
     public soundService: SoundService,
     public padService: PadService,
-    public pad: Pad
 ) { }
 
   ngOnInit() {
