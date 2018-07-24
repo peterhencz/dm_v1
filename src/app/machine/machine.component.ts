@@ -3,6 +3,7 @@ import * as Tone from 'tone';
 import { PadComponent } from '../pad/pad.component';
 import { DrumpadsComponent } from '../drumpads/drumpads.component';
 import { SoundService } from '../sound.service';
+import { Pad, PADS } from '../pads';
 
 @Component({
   selector: 'app-machine',

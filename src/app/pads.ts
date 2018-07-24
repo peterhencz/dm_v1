@@ -1,51 +1,31 @@
 export class Pad {
-  pad1: [
-     { status: true}
-  ],
-  pad2: [
-     { status: true}
-  ],
-  pad3: [
-     { status: true}
-  ],
-  pad4: [
-     { status: true}
-  ],
-  pad5: [
-     { status: true}
-  ],
-  pad6: [
-     { status: true}
-  ],
-  pad7: [
-     { status: true}
-  ],
-  pad8: [
-     { status: true}
-  ],
-  pad9: [
-     { status: true}
-  ],
-  pad10: [
-     { status: true}
-  ],
-  pad11: [
-     { status: true}
-  ],
-  pad12: [
-     { status: true}
-  ],
-  pad13: [
-     { status: true}
-  ],
-  pad14: [
-     { status: true}
-  ],
-  pad15: [
-     { status: true}
-  ],
-  pad16: [
-     { status: true}
-  ],
+    padId: number;
+    status: boolean;
+    flash: boolean
 
+  constructor(
+    padId: number;
+    status: boolean,
+    flash: boolean
+    ) {
+  }
 }
+
+export const PADS: Pad[] = [
+   { padId: 1, status: false, flash: false },   
+   { padId: 2, status: false, flash: false },   
+   { padId: 3, status: false, flash: false },   
+   { padId: 4, status: false, flash: false },   
+   { padId: 5, status: false, flash: false },   
+   { padId: 6, status: false, flash: false },   
+   { padId: 7, status: false, flash: false },   
+   { padId: 8, status: false, flash: false },                      
+   { padId: 9, status: false, flash: false },   
+   { padId: 10, status: false, flash: false },   
+   { padId: 11, status: false, flash: false },   
+   { padId: 12, status: false, flash: false },
+   { padId: 13, status: false, flash: false },   
+   { padId: 14, status: false, flash: false },   
+   { padId: 15, status: false, flash: false },   
+   { padId: 16, status: false, flash: false },   
+] 

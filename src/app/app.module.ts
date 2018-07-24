@@ -8,7 +8,7 @@ import { BoardComponent } from './board/board.component';
 import { MachineComponent } from './machine/machine.component';
 import { DrumpadsComponent } from './drumpads/drumpads.component';
 import { PadComponent } from './pad/pad.component';
-
+import { Pad, PADS } from './pads';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,8 @@ import { PadComponent } from './pad/pad.component';
   ],
   providers: [
     SoundService,
-    DrumpadsComponent
+    DrumpadsComponent,
+    Pad
   ],
   bootstrap: [AppComponent]
 })

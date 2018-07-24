@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as Tone from 'tone';
 import { PadComponent } from '../pad/pad.component';
-
+import { Pad, PADS } from '../pads';
 
 @Component({
   selector: 'app-drumpads',
@@ -10,7 +10,8 @@ import { PadComponent } from '../pad/pad.component';
 })
 export class DrumpadsComponent implements OnInit {
 
-  pads = PadComponent[] = [];
+  PADS: Pad[];
+
 
   kick = new Tone.Player({
     "url" : "./assets/drum_sounds/dm_kick.mp3",
@@ -20,14 +21,24 @@ export class DrumpadsComponent implements OnInit {
     console.log(time, sound);
   }, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "16n");
   
-  constructor() { }
+  constructor(private Pad: Pad) { }
 
   ngOnInit() {
+    this.getPads();
   }
 
-  playSeq() {
-    this.seq.start(0);
-    Tone.Transport.start();
+  getPads(): void {
+    for (let i = 0; i < 16; i++) {
+      console.log(PADS[i].padId);
+      const pad = new Pad(false, false);
+
+      console.log(pad);
+    }
   }
+
+  // playSeq() {
+  //   this.seq.start(0);
+  //   Tone.Transport.start();
+  // }
 
 }
