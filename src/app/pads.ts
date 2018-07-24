@@ -9,6 +9,7 @@ export class Pad {
 }
 
 export const PADS: Pad[] = [
+   { padId: 0, status: false, flash: false },  
    { padId: 1, status: false, flash: false },   
    { padId: 2, status: false, flash: false },   
    { padId: 3, status: false, flash: false },   
@@ -23,6 +24,5 @@ export const PADS: Pad[] = [
    { padId: 12, status: false, flash: false },
    { padId: 13, status: false, flash: false },   
    { padId: 14, status: false, flash: false },   
-   { padId: 15, status: false, flash: false },   
-   { padId: 16, status: false, flash: false },   
+   { padId: 15, status: false, flash: false },    
 ] 
