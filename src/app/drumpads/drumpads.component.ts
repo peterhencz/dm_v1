@@ -22,7 +22,8 @@ export class DrumpadsComponent implements OnInit {
   
   constructor( 
     public pad: Pad,
-    ) { }
+    ) { 
+  }
 
   ngOnInit() {
     this.getPads();
