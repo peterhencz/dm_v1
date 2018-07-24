@@ -10,8 +10,8 @@ import { PadService } from '../pad.service';
   styleUrls: ['./drumpads.component.css']
 })
 export class DrumpadsComponent implements OnInit {
-  @Input() pad: Pad;
 
+  pad: Pad;
   pads: Pad[];
 
   kick = new Tone.Player({
