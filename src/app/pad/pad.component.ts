@@ -33,7 +33,6 @@ export class PadComponent implements OnInit {
       this.Pad.status = true
     }
     console.log(this.Pad.status);
-    console.log(this.padService.getPad(4));
   }
 
 }
