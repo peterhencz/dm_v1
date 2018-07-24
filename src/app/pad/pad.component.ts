@@ -12,6 +12,8 @@ import { PadService } from '../pad.service';
 })
 export class PadComponent implements OnInit {
   
+  status;
+  
   constructor(
     public soundService: SoundService,
     public padService: PadService
