@@ -23,7 +23,7 @@ export class PadComponent implements OnInit {
 
   playSound() {
     this.soundService.selectedSound.start();
-    console.log(this.padService.getPad(pad));
+    console.log(this.padService.getPad(this.pad));
   }
 
   toggle() {
