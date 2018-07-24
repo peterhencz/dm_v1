@@ -26,14 +26,14 @@ export class PadComponent implements OnInit {
   }
 
   toggle() {
-    if (this.Pad.status) {
-      this.Pad.status = false
+    if (this.pad.status) {
+      this.pad.status = false
     }
     else {
-      this.Pad.status = true
+      this.pad.status = true
     }
-    console.log(this.Pad.status);
-    console.log(this.Pad);
+    console.log(this.pad.status);
+    console.log(this.pad);
   }
 
 }
