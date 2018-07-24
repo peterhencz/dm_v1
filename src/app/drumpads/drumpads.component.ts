@@ -10,7 +10,7 @@ import { Pad, PADS } from '../pads';
 })
 export class DrumpadsComponent implements OnInit {
 
-  PADS: Pad[];
+  PADS: Pad[] = [];
 
   kick = new Tone.Player({
     "url" : "./assets/drum_sounds/dm_kick.mp3",
