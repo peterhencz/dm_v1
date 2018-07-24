@@ -35,7 +35,7 @@ export class DrumpadsComponent implements OnInit {
   playSeq() {
     this.seq.start(0);
     Tone.Transport.start();
-    console.log(Pad);
+    console.log(this.pads);
   }
 
   stopSeq() {
