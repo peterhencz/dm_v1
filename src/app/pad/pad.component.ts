@@ -14,7 +14,8 @@ export class PadComponent implements OnInit {
   
   constructor(
     public soundService: SoundService,
-    public padService: PadService
+    public padService: PadService,
+    public pad: Pad
 ) { }
 
   ngOnInit() {
