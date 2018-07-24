@@ -12,8 +12,6 @@ import { PadService } from '../pad.service';
 export class DrumpadsComponent implements OnInit {
 
   pads: Pad[];
-  pad;
-  time;
 
   kick = new Tone.Player({
     "url" : "./assets/drum_sounds/dm_kick.mp3",
