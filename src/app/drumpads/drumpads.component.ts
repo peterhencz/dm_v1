@@ -19,7 +19,7 @@ export class DrumpadsComponent implements OnInit {
 
   seq = new Tone.Sequence(function(time, sound){
     console.log(time, sound);
-  }, this.pads, "16n");
+  }, [, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], "16n");
   
   constructor(public padService: PadService) { }
 
