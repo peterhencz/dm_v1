@@ -8,7 +8,7 @@ export class Pad {
 }
 
 export const PADS: Pad[] = [
-   { padId: 0, status: true, flash: false },
+   { padId: 0, status: false, flash: false },
    { padId: 1, status: false, flash: false },
    { padId: 2, status: false, flash: false },  
    { padId: 3, status: false, flash: false },  
