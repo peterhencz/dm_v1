@@ -26,7 +26,6 @@ export class DrumpadsComponent implements OnInit {
 
   ngOnInit() {
     this.getPads();
-    this.getPad();
   }
 
   getPads(): void {
