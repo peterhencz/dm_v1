@@ -19,8 +19,4 @@ export class PadService {
     return of(PADS.find(pad => pad.padId === padId));
   }
 
-  selectedPad() {
-    return of(PADS.Pad);
-    console.log(this.selectedPad());
-  }
 }
