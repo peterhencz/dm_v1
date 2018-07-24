@@ -17,9 +17,7 @@ export class DrumpadsComponent implements OnInit {
     "url" : "./assets/drum_sounds/dm_kick.mp3",
   }).toMaster();
 
-  seq = new Tone.Sequence(function(time, sound){
-    console.log(time, sound);
-  }, [0, 1, 2, 3, 4, 5, 6, 7, 8, this.pads[9], 10, 11, 12, 13, 14, 15], "16n");
+  seq
   
   constructor(public padService: PadService) { }
 
@@ -29,7 +27,12 @@ export class DrumpadsComponent implements OnInit {
 
   getPads(): void {
     this.padService.getPads()
-      .subscribe(pads => this.pads = PADS);
+      .subscribe(pads => {
+        this.pads = PADS
+        this.seq = new Tone.Sequence(function(time, sound){
+    console.log(time, sound);
+  }, [0, 1, 2, 3, 4, 5, 6, 7, 8, this.pads[9], 10, 11, 12, 13, 14, 15], "16n");
+      });
   }
 
   playSeq() {
