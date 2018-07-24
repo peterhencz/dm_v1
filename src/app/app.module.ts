@@ -9,6 +9,7 @@ import { MachineComponent } from './machine/machine.component';
 import { DrumpadsComponent } from './drumpads/drumpads.component';
 import { PadComponent } from './pad/pad.component';
 import { Pad, PADS } from './pads';
+import { PadService } from './pad.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { Pad, PADS } from './pads';
   providers: [
     SoundService,
     DrumpadsComponent,
-    Pad
+    Pad,
+    PadService
   ],
   bootstrap: [AppComponent]
 })

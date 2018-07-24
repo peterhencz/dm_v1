@@ -1,4 +1,6 @@
 
-<div *ngFor="let pad of pads" id="drumpads">
-  <app-pad></app-pad>
+<div id="drumpads">
+  <div *ngFor="let pad of pads">
+    <app-pad class="{{pad.padId}}"></app-pad>
+  </div>
 </div>

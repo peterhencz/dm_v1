@@ -1,9 +1,9 @@
 export class Pad {
-    padId: number;
-    status: boolean;
-    flash: boolean
+  padId: number;
+  status: boolean;
+  flash: boolean
 
-    constructor() {
+  constructor() {
   }
 }
 

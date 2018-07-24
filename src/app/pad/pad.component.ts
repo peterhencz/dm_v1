@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import * as Tone from 'tone';
 import { SoundService } from '../sound.service';
 import { DrumpadsComponent } from '../drumpads/drumpads.component';
+import { Pad, PADS } from '../pads';
+import { PadService } from '../pad.service';
 
 @Component({
   selector: 'app-pad',
@@ -11,9 +13,11 @@ import { DrumpadsComponent } from '../drumpads/drumpads.component';
 export class PadComponent implements OnInit {
 
   status = false;
-
+  
   constructor(
-    public soundService: SoundService) { }
+    public soundService: SoundService,
+    public padService: PadService
+) { }
 
   ngOnInit() {
   }
