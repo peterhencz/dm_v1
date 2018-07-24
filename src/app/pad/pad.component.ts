@@ -11,8 +11,7 @@ import { PadService } from '../pad.service';
   styleUrls: ['./pad.component.css']
 })
 export class PadComponent implements OnInit {
-  
-  pad;
+  @Input() pad;
 
   constructor(
     public soundService: SoundService,
