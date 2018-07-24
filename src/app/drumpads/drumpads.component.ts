@@ -10,7 +10,8 @@ import { PadComponent } from '../pad/pad.component';
 })
 export class DrumpadsComponent implements OnInit {
 
-  
+  pad = PadComponent[] = [1];
+
   kick = new Tone.Player({
     "url" : "./assets/drum_sounds/dm_kick.mp3",
   }).toMaster();
