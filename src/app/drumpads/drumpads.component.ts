@@ -36,7 +36,9 @@ export class DrumpadsComponent implements OnInit {
   }
 
   getPad(): void {
-    const pad = this.pads[0];
+    for (let i = 0; i < 16; i++) {
+    const pad = this.pads[i];
+    }
     this.padService.getPad()
       .subscribe(pad => this.pad = pad)
       console.log(this.pad)
