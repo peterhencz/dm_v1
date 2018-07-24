@@ -39,8 +39,8 @@ export class DrumpadsComponent implements OnInit {
     const pad = this.pads[i];
     this.padService.getPad()
       .subscribe(pad => this.pad = pad)
-      console.log(pad)
     }
+    console.log(pad)  
   }
 
   playSeq() {
