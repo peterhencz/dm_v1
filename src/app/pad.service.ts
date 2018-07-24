@@ -20,7 +20,7 @@ export class PadService {
   }
 
   selectedPad() {
-    return of(PADS[0]);
+    return of(PADS);
     console.log(this.selectedPad());
   }
 }
