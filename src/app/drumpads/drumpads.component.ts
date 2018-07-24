@@ -29,13 +29,7 @@ export class DrumpadsComponent implements OnInit {
 
   getPads(): void {
     this.padService.getPads()
-      .subscribe(pads => {
-        this.pads = pads
-        this.seq = new Tone.Sequence(function(time, sound){
-    console.log(time, sound);
-  }, pads, "16n");
-
-      });
+      .subscribe(pads => this.pads = PADS);
   }
 
   playSeq() {
