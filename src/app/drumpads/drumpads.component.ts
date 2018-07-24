@@ -34,15 +34,6 @@ export class DrumpadsComponent implements OnInit {
       .subscribe(pads => this.pads = PADS);
   }
 
-  getPad(): void {
-    for (let i = 0; i < 16; i++) {
-    const pad = this.pads[i];
-    this.padService.getPad()
-      .subscribe(pad => this.pad = pad)
-    }
-    console.log(this.pad);
-  }
-
   playSeq() {
     this.seq.start(0);
     Tone.Transport.start();
