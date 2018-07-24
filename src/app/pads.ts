@@ -4,9 +4,6 @@ export class Pad {
     flash: boolean
 
     constructor(
-      padId: number;
-      status: boolean,
-      flash: boolean
     ) {
   }
 }
