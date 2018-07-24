@@ -12,11 +12,10 @@ import { PadService } from '../pad.service';
 })
 export class PadComponent implements OnInit {
   
-  status;
-  
   constructor(
     public soundService: SoundService,
-    public padService: PadService
+    public padService: PadService,
+    public Pad: Pad
 ) { }
 
   ngOnInit() {
@@ -28,13 +27,13 @@ export class PadComponent implements OnInit {
   }
 
   toggle() {
-    if (this.status) {
-      this.status = false
+    if (this.Pad.status) {
+      this.Pad.status = false
     }
     else {
-      this.status = true
+      this.Pad.status = true
     }
-    console.log(this.status);
+    console.log(this.Pad.status);
   }
 
 }
