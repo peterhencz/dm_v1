@@ -11,7 +11,7 @@ import { Pad, PADS } from '../pads';
 export class DrumpadsComponent implements OnInit {
 
   PADS: Pad[];
-
+  pad: Pad;
 
   kick = new Tone.Player({
     "url" : "./assets/drum_sounds/dm_kick.mp3",
@@ -30,7 +30,7 @@ export class DrumpadsComponent implements OnInit {
   getPads(): void {
     for (let i = 0; i < 16; i++) {
       console.log(PADS[i].padId);
-      console.log(this.Pad);
+      console.log(this.pad);
     }
   }
 
