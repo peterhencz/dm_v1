@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import * as Tone from 'tone';
 import { PadComponent } from '../pad/pad.component';
 import { Pad, PADS } from '../pads';
@@ -10,6 +10,7 @@ import { PadService } from '../pad.service';
   styleUrls: ['./drumpads.component.css']
 })
 export class DrumpadsComponent implements OnInit {
+  @Input() pad: Pad;
 
   pads: Pad[];
 
@@ -31,6 +32,10 @@ export class DrumpadsComponent implements OnInit {
     this.padService.getPads()
       .subscribe(pads => this.pads = PADS);
       console.log(this.pads)
+  }
+
+  getPad(): void {
+    const pad = this.route.snapshot.paramMap.get('pad');
   }
 
   playSeq() {
