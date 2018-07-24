@@ -11,7 +11,6 @@ import { PadService } from '../pad.service';
 })
 export class DrumpadsComponent implements OnInit {
 
-  pad: Pad;
   pads: Pad[];
 
   kick = new Tone.Player({
