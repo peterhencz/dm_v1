@@ -15,8 +15,7 @@ export class PadComponent implements OnInit {
   constructor(
     public soundService: SoundService,
     public padService: PadService,
-    public Pad: Pad,
-    public drumPadsComponent: DrumpadsComponent
+    public Pad: Pad
 ) { }
 
   ngOnInit() {
@@ -24,7 +23,6 @@ export class PadComponent implements OnInit {
 
   playSound() {
     this.soundService.selectedSound.start();
-    console.log(this.drumPadsComponent.getPad());
   }
 
   toggle() {
@@ -35,6 +33,7 @@ export class PadComponent implements OnInit {
       this.Pad.status = true
     }
     console.log(this.Pad.status);
+    console.log(this.Pad);
   }
 
 }
