@@ -32,7 +32,7 @@ export class DrumpadsComponent implements OnInit {
   getPads(): void {
     this.padService.getPads()
       .subscribe(pads => this.pads = PADS);
-      console.log(pads)
+      console.log(this.pads)
   }
 
   getPad(): void {
