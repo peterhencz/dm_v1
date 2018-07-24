@@ -15,8 +15,4 @@ export class PadService {
     return of(PADS);
   }
 
-  getPad(): Observable<Pad> {
-    return of(PADS.find(pad => pad === pad));
-  }
-
 }
