@@ -12,7 +12,7 @@ export const PADS: Pad[] = [
    { padId: 1, status: false, flash: false },
    { padId: 2, status: false, flash: false },  
    { padId: 3, status: false, flash: false },  
-   { padId: 4, status: false, flash: true },  
+   { padId: 4, status: false, flash: false },  
    { padId: 5, status: false, flash: false },  
    { padId: 6, status: false, flash: false },  
    { padId: 7, status: false, flash: false },  
