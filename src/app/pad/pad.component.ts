@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import * as Tone from 'tone';
 import { SoundService } from '../sound.service';
 import { DrumpadsComponent } from '../drumpads/drumpads.component';
