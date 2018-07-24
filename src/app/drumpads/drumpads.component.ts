@@ -30,7 +30,7 @@ export class DrumpadsComponent implements OnInit {
   getPads(): void {
     for (let i = 0; i < 16; i++) {
       console.log(PADS[i].padId);
-      const pad = new Pad();
+      const pad = new Pad(1, true, true);
 
       console.log(pad);
     }
