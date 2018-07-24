@@ -12,6 +12,8 @@ import { PadService } from '../pad.service';
 export class DrumpadsComponent implements OnInit {
 
   pads: Pad[];
+  pad;
+  time;
 
   kick = new Tone.Player({
     "url" : "./assets/drum_sounds/dm_kick.mp3",
@@ -33,6 +35,7 @@ export class DrumpadsComponent implements OnInit {
   }
 
   playSeq() {
+    if (this.pad.padId == this.time )
     this.seq.start(0);
     Tone.Transport.start();
   }
