@@ -12,7 +12,7 @@ export class DrumpadsComponent implements OnInit {
 
   PADS: Pad[];
   pad: Pad;
-  
+
   kick = new Tone.Player({
     "url" : "./assets/drum_sounds/dm_kick.mp3",
   }).toMaster();
@@ -32,7 +32,7 @@ export class DrumpadsComponent implements OnInit {
 
   getPads(): void {
     for (let i = 0; i < 16; i++) {
-      const pad = new Pad();
+      const PADS = new Pad[]();
       console.log(PADS[i].padId);
       console.log(PADS[i].status);
       console.log(this.pad);
