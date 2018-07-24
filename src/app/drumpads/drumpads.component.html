@@ -1,5 +1,3 @@
 <div id="drumpads">
-  <div *ngFor="let pad of pads">
-    <app-pad class="{{pad.status}}" id="{{pad.padId}}"></app-pad>
-  </div>
+  <app-pad *ngFor="let pad of pads" class="{{pad.status}}" id="{{pad.padId}}"></app-pad>
 </div>
