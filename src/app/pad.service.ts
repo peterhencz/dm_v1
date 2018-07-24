@@ -15,7 +15,7 @@ export class PadService {
     return of(PADS);
   }
 
-  getTile(padId: number): Observable<Pad> {
+  getPad(padId: number): Observable<Pad> {
     return of(PADS.find(pad => pad.padId === padId));
   }
 

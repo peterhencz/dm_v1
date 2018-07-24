@@ -25,7 +25,6 @@ export class DrumpadsComponent implements OnInit {
 
   ngOnInit() {
     this.getPads();
-    console.log(this.pads[0].padId)
   }
 
   getPads(): void {
@@ -37,4 +36,9 @@ export class DrumpadsComponent implements OnInit {
     this.seq.start(0);
     Tone.Transport.start();
   }
+
+  stopSeq() {
+    this.seq.stop();
+  }
+
 }

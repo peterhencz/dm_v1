@@ -12,7 +12,6 @@ export class SoundService {
   }
 
   pushSound(sound) {
-    console.log(sound);
     this.selectedSound = sound;
   }
 
