@@ -33,7 +33,7 @@ export class DrumpadsComponent implements OnInit {
       const pad = new Pad();
       console.log(PADS[i].padId);
       console.log(PADS[i].status);
-      console.log(pad);
+      console.log(this.Pad);
     }
   }
 
