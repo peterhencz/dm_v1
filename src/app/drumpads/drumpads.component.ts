@@ -23,7 +23,7 @@ export class DrumpadsComponent implements OnInit {
   
   constructor(
     public Pad: Pad,
-    public PadComponent: PadComponent
+
     ) { }
 
   ngOnInit() {
