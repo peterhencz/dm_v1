@@ -3,10 +3,10 @@ export class Pad {
     status: boolean;
     flash: boolean
 
-  constructor(
-    padId: number;
-    status: boolean,
-    flash: boolean
+  // constructor(
+  //   padId: number;
+  //   status: boolean,
+  //   flash: boolean
     ) {
   }
 }
