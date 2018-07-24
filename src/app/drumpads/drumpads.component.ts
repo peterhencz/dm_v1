@@ -35,7 +35,7 @@ export class DrumpadsComponent implements OnInit {
   }
 
   playSeq() {
-    if (this.pad.padId == this.time )
+    if (this.pad.padId == this.time)
     this.seq.start(0);
     Tone.Transport.start();
   }
