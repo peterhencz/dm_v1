@@ -26,6 +26,7 @@ export class DrumpadsComponent implements OnInit {
 
   ngOnInit() {
     this.getPads();
+    this.getPad();
   }
 
   getPads(): void {
@@ -35,7 +36,10 @@ export class DrumpadsComponent implements OnInit {
   }
 
   getPad(): void {
-    const pad = this.route.snapshot.paramMap.get('pad');
+    const pad = this.pads[0];
+    this.padService.getPad()
+      .subscribe(pad => this.pad = pad)
+      console.log(this.pad)
   }
 
   playSeq() {
