@@ -34,11 +34,13 @@ export class DrumpadsComponent implements OnInit {
   }
 
   playSeq() {
+    this.seq.activeSeq == true;
     this.seq.start(0);
     Tone.Transport.start();
   }
 
   stopSeq() {
+    this.seq.activeSeq == false
     this.seq.stop();
   }
 
