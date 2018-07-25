@@ -45,6 +45,7 @@ export class MachineComponent implements OnInit {
     else {
       this.seq.stopSeq;
     }
+    console.log(this.seq.activeSeq)
   }
 
 }
