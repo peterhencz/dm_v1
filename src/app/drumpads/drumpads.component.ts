@@ -37,6 +37,7 @@ export class DrumpadsComponent implements OnInit {
     this.seq.activeSeq == true;
     this.seq.start(0);
     Tone.Transport.start();
+    console.log(this.seq.activeSeq)
   }
 
   stopSeq() {
