@@ -40,7 +40,6 @@ export class MachineComponent implements OnInit {
 
   toogleSeq(sequence) {
     this.seq.playSeq();
-    this.seq.stopSeq();
   }
 
 }
