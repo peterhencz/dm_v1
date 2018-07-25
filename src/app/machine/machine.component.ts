@@ -13,6 +13,7 @@ import { Pad, PADS } from '../pads';
 
 export class MachineComponent implements OnInit {
 
+  activeSeq;
   kick = new Tone.Player({
     "url" : "./assets/drum_sounds/dm_kick.mp3",
   }).toMaster();
@@ -37,13 +38,8 @@ export class MachineComponent implements OnInit {
     this.soundService.pushSound(sound);
   }
 
-  playSeq(sequence) {
-    if (this.seq.activeSeq == false)
-    { this.seq.playSeq() }
-    else {
-      this.seq.stopSeq();
-    }
-    console.log(this.seq.activeSeq)
+  toogleSeq(sequence) {
+    this.seq.playSeq();
   }
 
 }
