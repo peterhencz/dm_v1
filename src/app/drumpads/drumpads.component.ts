@@ -30,6 +30,7 @@ export class DrumpadsComponent implements OnInit {
   getPads(): void {
     this.padService.getPads()
       .subscribe(pads => this.pads = PADS);
+      console.log(this.time)
   }
 
   playSeq() {
