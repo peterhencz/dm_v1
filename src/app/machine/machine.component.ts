@@ -37,7 +37,7 @@ export class MachineComponent implements OnInit {
     this.soundService.pushSound(sound);
   }
 
-  toogleSeq(sequence) {
+  playSeq(sequence) {
     if (this.seq.activeSeq == false)
     { this.seq.playSeq() }
     else {
