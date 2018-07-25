@@ -39,8 +39,9 @@ export class MachineComponent implements OnInit {
 
   toogleSeq(sequence) {
     if (this.seq.activeSeq == false)
-    { this.seq.activeSeq = true
-      this.seq.playSeq(); }
+    { this.seq.playSeq(); 
+      this.seq.activeSeq = true
+      }
     else {
       this.seq.stopSeq;
     }
